@@ -1,0 +1,14 @@
+//sets the size of the component
+.main-header {
+    height: 400px;
+    position: relative;
+}
+
+.main-logo {
+    width: 75%;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -40%);
+}
