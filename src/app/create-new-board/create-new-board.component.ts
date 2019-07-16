@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+//import '../retroboard/retroboard.component'
 
 @Component({
   selector: 'app-create-new-board',
@@ -7,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CreateNewBoardComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
     
@@ -15,6 +17,8 @@ export class CreateNewBoardComponent implements OnInit {
 
   onclick() {
     console.log('clicked')
+    console.log('this.router',this.router)
+    this.router.navigate(['/retroboard']);
 
   }
 
