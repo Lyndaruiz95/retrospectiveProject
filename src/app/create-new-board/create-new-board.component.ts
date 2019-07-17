@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-//import '../retroboard/retroboard.component'
+import '../retroboard/retroboard.component'
 
 @Component({
   selector: 'app-create-new-board',
@@ -15,10 +15,11 @@ export class CreateNewBoardComponent implements OnInit {
     
   }
 
-  onclick() {
+  navigateTo(location, params = {}) {
     console.log('clicked')
+    console.log('window', window)
     console.log('this.router',this.router)
-    this.router.navigate(['/retroboard']);
+    this.router.navigate([location], params);
 
   }
 
