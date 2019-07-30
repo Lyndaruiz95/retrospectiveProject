@@ -1,0 +1,28 @@
+@import '../app.component.scss' ;
+
+.header{
+	margin: 0px
+	
+};
+
+.retroboard-tile{
+	margin: 15px;
+	opacity: 0.85;
+
+	.mat-grid-tile-header{
+		font-size: 1em;
+	};
+
+
+	.tile{
+		left: 10px;
+		//background: #B6D8E3;
+		background: lightblue;
+	};
+
+};
+
+
+.logo{
+  width: 75%;
+};
